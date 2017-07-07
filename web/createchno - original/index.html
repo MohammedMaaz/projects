@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>CREATECHNO</title>
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body id="body">
+    
+    <!-- Header Starts -->
+    <div class="header">
+        <div class="mainHeading" id="homeHeading">
+            <a href="#" id="mainHeadingText">CREATECHNO</a>
+            <div id="underline"></div>
+        </div>
+
+         <ul class="navBar" id="jsNavBar">        
+            <li id="selected"> <div class="hoverDot"></div>  <a href="#" class="navBarText" onclick="setProps(1);"> HOME </a> </li>
+            <li> <div class="hoverDot"></div>  <a href="#" class="navBarText" onclick="setProps(2);"> PROJECTS </a> </li>
+            <li> <div class="hoverDot"></div>  <a href="#" class="navBarText" onclick="setProps(3);"> SERVICES </a> </li>
+            <li> <div class="hoverDot"></div>  <a href="#" class="navBarText" onclick="setProps(4);"> OUR TEAM </a> </li>
+            <li> <div class="hoverDot"></div>  <a href="#" class="navBarText" onclick="setProps(5);"> ABOUT US </a> </li>
+         </ul>
+    </div>
+    <!-- Header Ends -->
+
+
+
+    <!-- Footer Starts -->
+    <div class="footer">
+        <!-- Arrow Up -->
+        <a href="#" class="arrowUp" onclick="arrowUpLink();">
+            <img src="images/ARROW.png" alt="Next Page" >
+            <div id="newChild"></div>
+        </a>
+
+        <!-- Social Footer -->
+        <ul class="social">
+            <li id="ContactUs"> Contact Us </li>
+            <li> <a href="#"> <img class="socialIcons" src="images/social icons/fb.png"> </a> </li>
+            <li> <a href="#"> <img class="socialIcons" src="images/social icons/twitter.png"> </a> </li>
+            <li> <a href="#"> <img class="socialIcons" src="images/social icons/skype.png"> </a> </li>
+            <li> <a href="#"> <img class="socialIcons" src="images/social icons/linkedin.png"> </a> </li>
+            <li> <a href="#"> <img class="socialIcons" src="images/social icons/gplus.png"> </a> </li>
+        </ul>
+     </div>
+    <!-- Footer Ends -->
+
+
+
+    <!-- Section 1- Home -->
+<div class="container">
+
+    <div id="home" class="section">
+        <img class="logoImage" src="images/test_image.png" alt="We Are Creative For Technology">
+    </div>
+
+    <!-- Section 2- Projects -->
+    <div id="projects" class="section">
+        <div id="projectsContainer">
+        <a href="#" onmouseenter="projectHover(this);" onmouseleave="projectUnHover(this);"> 
+            <div class="left-project-section">
+              <h3>Project 1</h3>
+              <img src="images\projects\dummy1.jpg" alt="project 1">
+              <span>
+                   One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                  into a horrible vermin. He lay on his armour-like ba...
+                  </br>
+                  <p> click for more details... </p>
+              </span>
+            </div>
+         </a>
+        <a href="#" onmouseenter="projectHover(this);" onmouseleave="projectUnHover(this);"> 
+            <div class="right-project-section">
+                <h3>Project 2</h3>
+               <img src="images\projects\dummy2.jpg" alt="project 1">
+               <span>
+                  One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                  into a horrible vermin. He lay on his armour-like back,
+                  </br>
+                  <p> click for more details... </p>
+              </span>
+            </div>
+         </a>
+         <a href="#" onmouseenter="projectHover(this);" onmouseleave="projectUnHover(this);"> 
+            <div class="left-project-section">
+                <h3>Project 3</h3>
+               <img src="images\projects\dummy3.jpg" alt="project 1">
+               <span>
+                  One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                  into a horrible vermin. He lay on his armour-like back,
+                  </br>
+                  <p> click for more details... </p>
+              </span>
+            </div>
+         </a>
+         <a href="#" onmouseenter="projectHover(this);" onmouseleave="projectUnHover(this);"> 
+            <div class="right-project-section">
+                <h3>Project 4</h3>
+               <img src="images\projects\dummy4.png" alt="project 1">
+               <span>
+                  One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                  into a horrible vermin. He lay on his armour-like back,
+                  </br>
+                  <p> click for more details... </p>
+              </span>
+            </div>
+         </a>
+         </div> <!-- projectsContainer ends -->
+    </div>
+
+    <!-- Section 3- Services -->
+    <div id="services" class="section">
+        <h1> SERVICES </h1>
+        <p>
+            Here at <strong>Createchno</strong> we pride ourselves with our open 'open communication' approach with our
+            clientele. Once you initialte a project with us, be it be big or small, our team will provide regular updates,
+            regarding project status. We encourage our clients to interact with us as much as possible; so we can deliver
+            exactly what you are looking for.
+        </p>
+        <p>
+            As a team we put in lot of dedication and fineness into everything we create with you, so that you are thoroughly
+            pleased with the outcome. As we begin all our projects from scratch, each plan is molded to most efficiently
+            accomplishing it's purpose. Backed up with solid coding and fresh designs, our work aims to impress. Finishing off
+            with a strenuous QA run, all our work is built to function smoothly.
+        </p>
+
+        <ul>
+            <li> <img src="images/services/cloud.png"> </li>
+            <li> <img src="images/services/android.png"> </li>
+            <li> <img src="images/services/ios.png"> </li>
+            <li> <img src="images/services/windows.png"> </li>
+        </ul>
+
+    </div>
+
+    <!-- Section 4- Our Team -->
+    <div id="ourTeam" class="section">
+        <div>
+            <a href="#">
+                <p class="hiddenText">See Bio...</p>
+                <img src="images/ourteam/dummy1.jpg" alt="">
+                <h2>SYED MUHAMMED</h2> <h1>FAHAD</h1>
+            </a>
+            <h3>SOFTWARE ENGINEER</h3>
+            <p>
+                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                into a horrible vermin.
+            </p>
+        </div>
+
+        <div>
+            <a href="#">
+                <p class="hiddenText">See Bio...</p>
+                <img src="images/ourteam/dummy2.jpg" alt="">
+                <h2>MUHAMMED</h2> <h1>NOMAN</h1>
+            </a>
+            <h3>SOFTWARE ENGINEER</h3>
+            <p>
+                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                into a horrible vermin.
+            </p>
+        </div>
+
+        <div>
+            <a href="#">
+                <p class="hiddenText">See Bio...</p>
+                <img src="images/ourteam/dummy3.jpg" alt="">
+                <h2>SYED MUHAMMED</h2> <h1>FAHAD</h1>
+            </a>
+            <h3>SOFTWARE ENGINEER</h3>
+            <p>
+                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                into a horrible vermin.
+            </p>
+        </div>
+
+        <div>
+            <a href="#">
+                <p class="hiddenText">See Bio...</p>
+                <img src="images/ourteam/dummy4.jpg" alt="">
+                <h2>MUHAMMED</h2> <h1>NOMAN</h1>
+            </a>
+            <h3>SOFTWARE ENGINEER</h3>
+            <p>
+                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                into a horrible vermin.
+            </p>
+        </div>
+
+        <div>
+            <a href="#">
+                <p class="hiddenText">See Bio...</p>
+                <img src="images/ourteam/dummy5.jpg" alt="">
+                <h2>SYED MUHAMMED</h2> <h1>FAHAD</h1>
+            </a>
+            <h3>SOFTWARE ENGINEER</h3>
+            <p>
+                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                into a horrible vermin.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 5- About Us -->
+    <div id="aboutUs" class="section">
+        <h1> ABOUT US </h1>
+        <p>
+            Here at <strong>Createchno</strong> we pride ourselves with our open 'open communication' approach with our
+            clientele. Once you initialte a project with us, be it be big or small, our team will provide regular updates,
+            regarding project status. We encourage our clients to interact with us as much as possible; so we can deliver
+            exactly what you are looking for.
+        </p>
+        <p>
+            As a team we put in lot of dedication and fineness into everything we create with you, so that you are thoroughly
+            pleased with the outcome. As we begin all our projects from scratch, each plan is molded to most efficiently
+            accomplishing it's purpose. Backed up with solid coding and fresh designs, our work aims to impress. Finishing off
+            with a strenuous QA run, all our work is built to function smoothly.
+        </p>
+        <p>
+            As a team we put in lot of dedication and fineness into everything we create with you, so that you are thoroughly
+            pleased with the outcome. As we begin all our projects from scratch, each plan is molded to most efficiently
+            accomplishing it's purpose. Backed up with solid coding and fresh designs, our work aims to impress. Finishing off
+            with a strenuous QA run, all our work is built to function smoothly.
+        </p>
+    </div>
+
+</div>
+
+    <script>
+    
+        function setProps(newPageName)
+        {
+            var heading = document.getElementById('mainHeadingText');
+            var navBar = document.getElementsByClassName('navBarText');
+            var hoverDots = document.getElementsByClassName('hoverDot');
+            var newChild = document.getElementById('newChild');
+            var bgDarkColor, bgLightColor, headingAndNavColor, selectedColor;
+            var thisLiElem;
+            var currentPageName;
+
+            //finding current page name
+            for(var i=0; i<5; ++i)
+            {
+                if(document.getElementById('jsNavBar').getElementsByTagName('li')[i].id=='selected')
+                    currentPageName = i+1;
+            }
+
+
+            switch(newPageName)
+            {
+                case 1:
+                    if(currentPageName>newPageName)
+                    {
+                        document.getElementById('aboutUs').style.top = "100%";
+                        document.getElementById('ourTeam').style.top = "100%";
+                        document.getElementById('services').style.top = "100%";
+                        document.getElementById('projects').style.top = "100%";
+                    }
+                    else
+                    {
+                            document.getElementById('home').style.top = "110px";
+                    }
+                    //setting props
+                    bgDarkColor = "#0062af";
+                    bgLightColor = "#007daf";
+                    headingAndNavColor = "#0064AF";
+                    selectedColor = "#77c13e";
+                    //identify element to set it's id : selected
+                    thisLiElem = document.getElementById('jsNavBar').getElementsByTagName('li')[0];
+                    newChild.innerText = "see our projects"; 
+                    break;
+
+                case 2:
+                    if(currentPageName>newPageName)
+                    {
+                        document.getElementById('services').style.top = "100%";
+                        document.getElementById('ourTeam').style.top = "100%";
+                        document.getElementById('aboutUs').style.top = "100%";
+                    }
+                    else
+                        document.getElementById('projects').style.top = "110px";
+                    //setting props
+                    bgDarkColor = "#4B9846";
+                    bgLightColor = "#4BB046";
+                    headingAndNavColor = "#4B9846";
+                    selectedColor = "#0064AF";
+                    //identify element to set it's id : selected
+                    thisLiElem = document.getElementById('jsNavBar').getElementsByTagName('li')[1];
+                    newChild.innerText = "see our services";
+                    break;
+
+                case 3:
+                    if(currentPageName>newPageName)
+                    {
+                        document.getElementById('ourTeam').style.top = "100%";
+                        document.getElementById('aboutUs').style.top = "100%";
+                    }
+                    else
+                    {
+                        document.getElementById('projects').style.top = "110px";
+                        document.getElementById('services').style.top = "110px";
+                    }
+                    //setting props
+                    bgDarkColor = "#4687AF";
+                    bgLightColor = "#4699D0";
+                    headingAndNavColor = "#4687B0";
+                    selectedColor = "#78C142";
+                    //identify element to set it's id : selected
+                    thisLiElem = document.getElementById('jsNavBar').getElementsByTagName('li')[2];
+                    newChild.innerText = "see our team";
+                    break;
+
+                case 4:
+                    if(currentPageName>newPageName)
+                    {
+                        document.getElementById('aboutUs').style.top = "100%";
+                    }
+                    else
+                    {
+                        document.getElementById('projects').style.top = "110px";
+                        document.getElementById('services').style.top = "110px";
+                        document.getElementById('ourTeam').style.top = "110px";
+                    }
+                    //setting props
+                    bgDarkColor = "#1E1E1E";
+                    bgLightColor = "#262626";
+                    headingAndNavColor = "#1E1E1E";
+                    selectedColor = "#4694C7";
+                    //identify element to set it's id : selected
+                    thisLiElem = document.getElementById('jsNavBar').getElementsByTagName('li')[3];
+                    newChild.innerText = "see about us";
+                    break;
+
+                case 5:
+                    if(currentPageName>newPageName)
+                    {
+                        document.getElementById('home').style.top = "100%";
+                        document.getElementById('projects').style.top = "100%";
+                        document.getElementById('services').style.top = "100%";
+                        document.getElementById('ourTeam').style.top = "100%";
+                    }
+                    else
+                    {
+                        document.getElementById('projects').style.top = "110px";
+                        document.getElementById('services').style.top = "110px";
+                        document.getElementById('ourTeam').style.top = "110px";
+                        document.getElementById('aboutUs').style.top = "110px";
+                    }
+                    //setting props
+                    bgDarkColor = "#199664";
+                    bgLightColor = "#02AD6F";
+                    headingAndNavColor = "#189764";
+                    selectedColor = "#1E1E1E";
+                    //identify element to set it's id : selected
+                    thisLiElem = document.getElementById('jsNavBar').getElementsByTagName('li')[4];
+                    newChild.innerText = "see our homepage";
+                    break;
+            }
+
+            //setting Props Now //
+            for(var i=0; i<5; ++i)
+            {
+                document.getElementById('jsNavBar').getElementsByTagName('li')[i].id = "";
+            }
+            thisLiElem.id = "selected";
+            var selectedLink = thisLiElem.getElementsByTagName('a')[0];
+            var selectedDot = thisLiElem.getElementsByClassName('hoverDot')[0];
+            heading.style.color = headingAndNavColor;
+            for(var i=0; i<navBar.length; ++i)
+            {
+                navBar[i].style.color = headingAndNavColor;
+            }
+            for(var i=0; i<hoverDots.length; ++i)
+            {
+               hoverDots[i].style.backgroundColor = headingAndNavColor;
+            }
+            document.getElementById('underline').style.backgroundColor = headingAndNavColor;
+            selectedLink.style.color = selectedColor;
+            selectedDot.style.backgroundColor = selectedColor;
+
+        }
+
+        function arrowUpLink()
+        {
+            var selected;
+            for(var i=0; i<5; ++i)
+            {
+                if(document.getElementById('jsNavBar').getElementsByTagName('li')[i].id=='selected')
+                    selected = i+1;
+            }
+            if(selected==5)
+                selected=0;
+
+            setProps(selected+1);
+        }
+
+        function projectHover(elem)
+        {
+            var h3 = elem.getElementsByTagName('h3')[0];
+            h3.style.opacity = "1";
+        }
+        function projectUnHover(elem)
+        {
+            var h3 = elem.getElementsByTagName('h3')[0];
+            h3.style.opacity = "0";
+        }
+
+        setProps(1);
+    
+    </script>
+
+</body>
+
+</html>

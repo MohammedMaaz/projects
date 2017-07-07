@@ -1,0 +1,460 @@
+body
+{
+    margin: 0px;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/**********************************************/
+/*************** HEADER STARTS ****************/
+/**********************************************/
+div.header{
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+    box-shadow: 2px 0px 8px rgba(0,0,0, 0.55);
+    height: 110px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.mainHeading{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.6em;
+    float: left;
+    margin-top: 65px;
+    margin-left: 85px;
+}
+#underline { /* underline transition on main heafing */
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .4s ease, background-color .4s ease;
+    border-radius: 50%;
+}
+.mainHeading:hover > #underline {
+	width: 100%;
+}
+
+.navBar{
+    float: right;
+    margin-top: 73px;
+    margin-right: 64px;
+}
+
+.navBar li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navBar li a{
+    padding: 0.2em 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+div.hoverDot{
+    position: relative;
+    border-radius: 2.5px;
+    width: 5px;
+    height: 5px;
+    font-size: 50px;
+    opacity: 0;
+    margin: auto;
+    margin-bottom: -6px;
+    bottom: -3px;
+    transition: all 0.2s;
+}
+.navBar li:hover > div.hoverDot{
+    bottom: 10px;
+    opacity: 1;
+    transition: all 0.2s;
+}
+#selected div.hoverDot{
+    opacity: 1;
+    bottom: 10px;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+
+
+/**********************************************/
+/*************** FOOTER STARTS ****************/
+/**********************************************/
+div.footer{
+    height: 63px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.arrowUp{
+    display: inline-block;
+    padding: 0px;
+    margin-top: 23px;
+}
+.arrowUp img{
+    width: 33px;
+    transition:all 0.3s ease;
+    transition-delay: 0.57s;
+}
+.arrowUp:hover > img{
+    transform: translateY(-120%);
+    transition: all 0.3s ease;
+}
+#newChild{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9em;
+    margin: auto;
+    opacity: 0;
+    transition: all 0.4s;
+    transition-delay: 0.3s;
+    transform: translateY(10px);
+    visibility: hidden;
+}
+.arrowUp:hover > div#newChild{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-8px);
+    transition: all 0.4s ease;
+    transition-delay: 0.25s;
+}
+
+
+ul.social{
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+}
+.social li{
+    display: inline;
+    margin-right: 11px;
+}
+#ContactUs{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    vertical-align: super;
+    display: inline-block;
+    font-size: 0.9em;
+}
+.socialIcons{
+    width: 23px;
+    transition: 0.4s ease;
+}
+.socialIcons:hover{
+    transform: scale(1.55);
+    transition:transform 0.4s ease-in-out;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+
+
+/* *************************************************/
+/* CONTAINER AND SECTION STYLING FOR PAGE TRANSITIONS
+/* *************************************************/
+div.container{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+div.section{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    transition: top 1s;
+    position: absolute;
+    top: 100%;
+}
+div.section:nth-of-type(1){
+    position: relative;
+    top: 110px;
+    background: radial-gradient(circle at center, #007daf 30%,  #0062af 67%);
+}
+div.section:nth-of-type(2){
+    background: radial-gradient(circle at center, #4BB046 30%,  #4B9846 67%);
+}
+div.section:nth-of-type(3){
+    background: radial-gradient(circle at center, #4699D0 30%,  #4687AF 67%);
+}
+div.section:nth-of-type(4){
+    background: radial-gradient(circle at center, #262626 30%,  #1E1E1E 67%);
+}
+div.section:nth-of-type(5){
+    background: radial-gradient(circle at center, #02AD6F 30%,  #199664 67%);
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+
+
+
+/**********************************************/
+/************** HOMEPAGE STARTS ***************/
+/**********************************************/
+.logoImage{
+    margin-top: 4%;
+    width: 43%;
+    min-width: 270px;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+
+
+
+/**********************************************/
+/************ PROJECTSPAGE STARTS *************/
+/**********************************************/
+#projectsContainer{
+    margin-top: 7.5vh;
+}
+
+#projectsContainer div{
+    display: flex;
+    position: relative;
+    align-items:center;
+    text-align: left;
+    padding-top: 8px; padding-bottom: 8px;
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    width: 40.6%;
+}
+
+#projectsContainer h3{
+    position: absolute;
+    color: white;
+    top: 0%;
+    padding-left: 1.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 4px black;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+#projectsContainer div.left-project-section{
+    float: left;
+}
+#projects div.right-project-section{
+    float: right;
+}
+
+#projectsContainer div img{
+    width: 16vw;
+    min-width: 120px;
+    margin-right: 10px;
+}
+
+#projectsContainer div span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex: 1;
+    font-size: 0.68em;
+    color: #fff;
+}
+
+#projectsContainer div p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#projectsContainer a:hover > div{
+    background-color: #2B7127;
+    opacity: 0.9;
+    transform: scale(1.1);
+    transition: transform 0.7s;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+
+
+/**********************************************/
+/************ SERVICESPAGE STARTS *************/
+/**********************************************/
+#services{
+    padding: 50px 16%;
+    text-align: justify;
+    text-align-last:center;
+}
+
+#services h1{
+    margin: 0px;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.65em;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+#services p{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05em;
+    margin-bottom: 22px;
+}
+
+#services ul{
+    margin-top: 40px;
+}
+#services ul li{
+    display: inline;
+    margin-right: 9%;
+}
+#services ul li:nth-of-type(4){
+    margin-right: 0px;
+}
+#services ul li img{
+    width: 50px; height: 50px;
+    opacity: 0.5;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+
+
+
+/*********************************************/
+/************ OURTEAMPAGE STARTS *************/
+/*********************************************/
+#ourTeam{
+    display: flex;
+    padding: 4.5% 6%;
+    padding-bottom: 0px;
+}
+
+#ourTeam div{
+   display: flex;
+   flex-direction: column;
+}
+
+#ourTeam div img{
+    width: 15vw;
+}
+
+#ourTeam a{
+    position: relative;
+}
+
+#ourTeam div h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.23em;
+    margin: 0px;
+    margin-top: 4px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#ourTeam div h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.73em;
+    margin: 0px;
+    margin-top: -8px;
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+
+#ourTeam div h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    margin-top: 4px;
+    font-size: 0.9em;
+    color: #0064AF;
+}
+
+#ourTeam div p{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size: 0.7em;
+    margin: 0px;
+    margin-top: 7px;
+    padding: 0px 9%;
+}
+
+p.hiddenText{
+    opacity: 0;
+    position: absolute;
+    left: 1%; right: 1%;
+    top: 7.3vw;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 1.5em !important;
+   color: #fff;
+}
+
+#ourTeam a:hover > img{
+    filter: opacity(25%);
+}
+
+#ourTeam a:hover > p.hiddenText{
+    opacity: 1;
+    transition: opacity 0.7s;
+}
+/*********************************************/
+
+
+
+
+
+
+
+/*********************************************/
+/************ ABOUTUSPAGE STARTS *************/
+/*********************************************/
+#aboutUs{
+    padding: 50px 16%;
+    text-align: justify;
+    text-align-last: center;
+}
+
+#aboutUs h1{
+    margin: 0px;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.65em;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+#aboutUs p{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05em;
+    margin-bottom: 22px;
+}
+/*********************************************/
